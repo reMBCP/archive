@@ -55,5 +55,5 @@ jobs:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
           cd Rembbpatch/MBCPApp
-          sudo bash MBCPApp/autopatch.sh "$INPUT_URL"
+          sudo bash autopatch.sh "$INPUT_URL"
       
