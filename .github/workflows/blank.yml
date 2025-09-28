@@ -47,13 +47,13 @@ jobs:
           
       - name: CHMOD
         run: |
-          cd Rembbpatch
+          cd Rembbpatch/MBCPApp
           sudo chmod 777 -R *
 
       - name: Patching
         env:
           INPUT_URL: ${{ inputs.input_url }}
         run: |
-          cd Rembbpatch
+          cd Rembbpatch/MBCPApp
           sudo bash MBCPApp/autopatch.sh "$INPUT_URL"
       
